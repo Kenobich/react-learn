@@ -1,15 +1,16 @@
 .cardContainer {
   display: flex;
-  margin: 0 auto;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 900px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .card {
   margin: 10px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  border: solid 1px grey;
+  border-radius: 20px;
+  border: solid 1px black;
   width: 250px;
   height: 500px;
   background-color: white;
@@ -17,24 +18,25 @@
 .card:nth-child(even) {
   background-color: lawngreen;
 }
-.card:nth-last-child(-n + 2) {
-  margin-right: 280px;
+.card:nth-last-child(-n + 1) {
+  margin-left: 90px;
+  margin-right: auto;
   background-color: hotpink;
 }
 
 .cardHeader {
   padding-top: 10px;
-  padding-left: 15px;
 }
 .cardTitle {
-  font-size: 20px;
+  text-align: center;
+  font-size: 1.5em;
   color: gray;
 }
 
 .subtitle {
-  padding-left: 15px;
-  font-size: 30px;
-  color: black;
+  padding-left: 40px;
+  font-size: 2em;
+  color: blue;
 }
 .interests {
   padding-top: 40px;
@@ -42,15 +44,48 @@
   padding-bottom: 20px;
 
   text-align: center;
-  border-bottom: solid 1px slategrey;
+  border-bottom: solid 1px black;
+
   font-size: 20px;
 }
 .hobby {
   list-style-type: none;
   width: 150px;
   padding-top: 25px;
-  font-size: 20px;
+  font-size: 1em;
   color: black;
   padding-bottom: 20px;
-  border-bottom: solid 1px slategrey;
+  border-bottom: solid 1px black;
+}
+
+@media only screen and (max-width: 480px) {
+  .cardContainer {
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .card {
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+  .cardHeader {
+    text-align: center;
+  }
+
+  .cardTitle {
+    /* font-size: 2em; */
+    color: pink;
+  }
+  .subtitle {
+    color: pink;
+  }
+
+  .ul {
+    margin: 0 auto;
+  }
+  .hobby {
+    color: black;
+  }
 }

@@ -17,11 +17,12 @@ return(
      <div className={s.cardHeader}>
         <div className={s.cardTitle}>
         <span >{person.name} </span> 
-        <span >{person.surname}</span><br/>
+        <span >{person.surname}</span>
        </div>
       </div>
-
-        <span className ={s.subtitle} >{person.age} years old</span><br/>
+      <div className ={s.subtitle}>
+        <span >{person.age} years old</span>
+      </div>
         <div className={s.interests}>Interests:</div>
         
         <ul className={s.ul}>{person.hobby.map(hob=>{return(
