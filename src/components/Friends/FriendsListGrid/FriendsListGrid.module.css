@@ -1,0 +1,93 @@
+.cardContainer {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 300px);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+  padding-left: 40px;
+}
+
+.card {
+  margin: 10px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  border: solid 1px grey;
+  width: 250px;
+  height: 500px;
+  background-color: white;
+}
+.card:nth-child(even) {
+  background-color: red;
+}
+.card:nth-last-child(-n + 2) {
+  margin-right: 280px;
+  background-color: hotpink;
+}
+
+.cardHeader {
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+.cardTitle {
+  font-size: 1.5em;
+  color: gray;
+}
+
+.subtitle {
+  text-align: center;
+  padding-left: 15px;
+  font-size: 2em;
+  color: black;
+}
+.interests {
+  padding-top: 40px;
+  padding-right: 50px;
+  padding-bottom: 20px;
+
+  text-align: center;
+  border-bottom: solid 1px slategrey;
+  font-size: 20px;
+}
+
+.hobby {
+  list-style-type: none;
+  width: 150px;
+  padding-top: 25px;
+  font-size: 20px;
+  color: black;
+  padding-bottom: 20px;
+  border-bottom: solid 1px slategrey;
+}
+
+@media only screen and (max-width: 480px) {
+  .cardContainer {
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+  }
+  .card {
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+  .cardHeader {
+    text-align: center;
+  }
+
+  .cardTitle {
+    /* font-size: 2em; */
+    color: pink;
+  }
+  .subtitle {
+    color: pink;
+  }
+  .interests {
+  }
+  .ul {
+    margin: 0 auto;
+  }
+  .hobby {
+    color: black;
+  }
+}

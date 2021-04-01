@@ -1,0 +1,22 @@
+.nav {
+  grid-area: n;
+  background-color: rgba(158, 8, 8, 0.74);
+}
+.item {
+  color: darkgray;
+}
+
+@media only screen and (max-width: 480px) {
+  .nav {
+    grid-area: c;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 30px);
+
+    padding-top: 10px;
+    padding-left: 10px;
+    background-color: chartreuse;
+
+    font-size: 10px;
+  }
+}
