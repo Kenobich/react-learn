@@ -24,5 +24,6 @@
 
   .app-wrapper-content {
     grid-area: h;
+    width: 100%;
   }
 }
