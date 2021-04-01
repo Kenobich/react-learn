@@ -1,11 +1,35 @@
 .Header {
   grid-area: h;
+  display: flex;
+  justify-content: space-between;
   background-color: black;
+  font-size: 10px;
 }
 .Header img {
   height: 100%;
-
   border-radius: 0px 40px 40px 0px;
+}
+.logo {
+  color: violet;
+}
+.search {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 1%;
+}
+.input {
+  height: 20%;
+
+  margin-left: 1%;
+  background-color: gray;
+  color: white;
+  font-family: "Poppins";
+  width: 50%;
+  padding: 12px 20px;
+
+  box-sizing: border-box;
 }
 
 @media only screen and (max-width: 480px) {
