@@ -11,7 +11,7 @@
 }
 .app-wrapper-content {
   grid-area: c;
-  background-color: bisque;
+  background-color: blueviolet;
 }
 
 @media only screen and (max-width: 480px) {
