@@ -17,7 +17,7 @@
   background-color: white;
 }
 .card:nth-child(even) {
-  background-color: red;
+  background-color: darkorchid;
 }
 .card:nth-last-child(-n + 2) {
   margin-right: 280px;
