@@ -1,8 +1,3 @@
-.cardContainer {
-  margin: 0;
-  width: 250px;
-  height: 500px;
-}
 .card {
   margin: 10px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -56,25 +51,7 @@
   border-bottom: solid 1px black;
 }
 
-@media only screen and (max-width: 768px) {
-  .cardContainer {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(2, 300px);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    padding-left: 10px;
-  }
-}
-
 @media only screen and (max-width: 480px) {
-  .cardContainer {
-    margin: 0 auto;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    width: 100%;
-  }
   .card {
     margin: 0 auto;
     margin-top: 5%;

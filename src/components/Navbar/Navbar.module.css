@@ -7,13 +7,16 @@
   background-color: black;
   border-radius: 0px 10px 0px 0px;
 }
-.fontStyle {
+.fontStyle a {
   font-family: "Poppins";
   font-size: 2em;
-  color: darkgray;
   padding-bottom: 2%;
+  color: darkgray;
+  text-decoration: none;
 }
-
+.fontStyle a.activeLink {
+  color: darkorchid;
+}
 @media only screen and (max-width: 480px) {
   .nav {
     font-family: "Poppins";
