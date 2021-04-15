@@ -1,4 +1,5 @@
 import React from 'react';
+import PersonCard from '../PersonCard/PersonCard';
 import MyPost from './My Post/MyPost';
 import p from './Profile.module.css';
 
@@ -12,7 +13,10 @@ const Profile = () => {
      ava + descrip 
   </div>
    <MyPost  />
+   <PersonCard />
+   
 </div>
+
 
 }
 
