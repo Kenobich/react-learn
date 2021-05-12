@@ -1,10 +1,18 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { Success } from "../UI/Success";
 import s from "./Dialogs.module.css";
 import { UIContext } from "../../context/UIContext";
 import { Error } from "../UI/Error";
 
+
 const Dialogs = (props) => {
+  const [count, setCount] = useState(0);
+  // useEffect(() => {
+  //   // Обновляем заголовок документа с помощью API браузера
+  //   document.title = `Вы нажали ${count} раз`;
+  //
+  // });
+
   const UI = useContext(UIContext);
   const [msg, setMsg] = useState("");
   const [color, setColor] = useState({
@@ -62,7 +70,15 @@ const Dialogs = (props) => {
       )}
 
       <input type="text" value={msg} onChange={HandleChange} />
+
+      <p>Вы нажали {count} раз</p>
+      <button onClick={() => setCount(count + 1)}>
+        Нажми на меня
+      </button>
+
+
     </div>
+
   );
 };
 
