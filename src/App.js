@@ -9,15 +9,17 @@ import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import Profile from "./components/Profile/Profile";
 
-const App = () => {
+const App = (props) => {
+
   return (
+
     <BrowserRouter>
       <div className="app-wrapper">
         <Header />
         <Navbar />
         <div className="app-wrapper-content">
-          <Route path="/dialogs" component={Dialogs} />
-          <Route path="/profile" component={Profile} />
+          <Route  path="/dialogs" render={()=> <Dialogs/>} />
+          <Route  exact path="/profile" render={()=> <Profile postDate={props.postDate}/>} />
           <Route path="/friends" component={FriendsList} />
           <Route path="/friendsGrid" component={FriendsListGrid} />
         </div>
