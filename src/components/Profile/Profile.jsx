@@ -8,8 +8,7 @@ const Profile = (props) => {
             <ProfileInfo/> >
             <MyPost postDate={props.postDate}
                     newPost={props.newPost}
-                    addNewPost={props.addNewPost}
-                    addPost={props.addPost}/>
+                    dispatch={props.dispatch}/>
         </div>
     );
 };

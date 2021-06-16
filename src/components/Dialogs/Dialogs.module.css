@@ -7,9 +7,10 @@
 }
 .dialogs {
 background-color: aqua;
+    text-align: center;
 
 }
 
 .messages{
-
+padding-left: 5%;
 }
